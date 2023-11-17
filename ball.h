@@ -6,7 +6,7 @@
 class Ball : sf::Drawable {
 
     public:
-        Ball();
+        Ball() : Ball(5, sf::Color::Black) {}
         Ball(double radius, sf::Color mColor);
         Ball(const Ball &right);
         ~Ball();
