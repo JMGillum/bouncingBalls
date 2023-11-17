@@ -8,6 +8,7 @@ class Ball : sf::Drawable {
     public:
         Ball();
         Ball(double radius, sf::Color mColor);
+        Ball(const Ball &right);
         ~Ball();
 
         // Returns information about the object's location
