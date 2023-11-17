@@ -6,8 +6,8 @@
 class Ball : sf::Drawable {
 
     public:
-        Ball() : Ball(5, sf::Color::Black) {}
-        Ball(double radius, sf::Color mColor);
+        Ball() : Ball(sf::Vector2f(0,0), 5, sf::Color::Black) {}
+        Ball(sf::Vector2f position, double radius, sf::Color color);
         Ball(const Ball &right);
         ~Ball();
 
