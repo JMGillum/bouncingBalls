@@ -9,7 +9,6 @@ class Ball : sf::Drawable {
         Ball() : Ball(sf::Vector2f(0,0), 5, sf::Color::Black) {}
         Ball(sf::Vector2f position, double radius, sf::Color color);
         Ball(const Ball &right);
-        ~Ball();
 
         // Returns information about the object's location
         sf::Vector2f position() const { return mPosition; }

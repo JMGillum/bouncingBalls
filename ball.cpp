@@ -26,9 +26,3 @@ Ball::Ball(const Ball &right){
 
 
 
-Ball::~Ball(){
-
-
-}
-
-
