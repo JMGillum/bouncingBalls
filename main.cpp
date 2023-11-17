@@ -2,6 +2,8 @@
 #include <string>
 #include <iostream>
 
+#include "ball.h"
+
 
 int main(){
 
