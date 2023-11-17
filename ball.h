@@ -21,6 +21,9 @@ class Ball : sf::Drawable {
         float velocityX() const { return mVelocity.x; }
         float velocityY() const { return mVelocity.y; }
         
+        double radius() const { return mRadius; }
+
+        sf::Color color() const { return mColor; }
 
 
     protected:
