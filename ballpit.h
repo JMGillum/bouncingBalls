@@ -5,7 +5,7 @@
 
 #include "ball.h"
 
-class Ballpit {
+class Ballpit : public sf::Drawable{
 
     public:
 
