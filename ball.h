@@ -29,7 +29,6 @@ class Ball : public sf::Drawable {
 
     protected:
 
-        sf::Texture mTexture;
         sf::CircleShape mShape;
         sf::Color mColor;
         double mRadius;
