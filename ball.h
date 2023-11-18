@@ -1,9 +1,9 @@
 #ifndef BALL_H
 #define BALL_H
 
-#include <SFML/Graphics.hpp>>
+#include <SFML/Graphics.hpp>
 
-class Ball : sf::Drawable {
+class Ball : public sf::Drawable {
 
     public:
         Ball() : Ball(sf::Vector2f(0,0), 5, sf::Color::Black) {}
@@ -24,10 +24,13 @@ class Ball : sf::Drawable {
 
         sf::Color color() const { return mColor; }
 
+        virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+
 
     protected:
 
-        sf::Sprite mSprite;
+        sf::Texture mTexture;
+        sf::CircleShape mShape;
         sf::Color mColor;
         double mRadius;
         sf::Vector2f mVelocity;
