@@ -21,7 +21,7 @@ int main(){
     // create window of size 800 x 800 with title Space Invaders
     sf::RenderWindow window(sf::VideoMode(SCREEN_RES_X, SCREEN_RES_Y), "Balls");
 
-    Ball test;
+    Ball test(sf::Vector2f(200,200),40,sf::Color::Blue);
     
     while (window.isOpen()){
         timeSinceLastUpdate += clock.restart();
@@ -36,6 +36,7 @@ int main(){
             timeSinceLastUpdate -= TIME_PER_FRAME;
             window.clear();
             window.draw(test);
+            window.display();
         }   
     }
 
