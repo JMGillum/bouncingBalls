@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 
-#include "ball.h"
+#include "ballpit.h"
 
 
 int main(){
@@ -21,7 +21,7 @@ int main(){
     // create window of size 800 x 800 with title Space Invaders
     sf::RenderWindow window(sf::VideoMode(SCREEN_RES_X, SCREEN_RES_Y), "Balls");
 
-    Ball test(sf::Vector2f(200,200),40,sf::Color::Blue);
+    Ballpit balls(2);
     
     while (window.isOpen()){
         timeSinceLastUpdate += clock.restart();
@@ -35,7 +35,7 @@ int main(){
         while (timeSinceLastUpdate > TIME_PER_FRAME){
             timeSinceLastUpdate -= TIME_PER_FRAME;
             window.clear();
-            window.draw(test);
+            window.draw(balls);
             window.display();
         }   
     }
