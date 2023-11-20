@@ -13,6 +13,7 @@ class Ballpit : public sf::Drawable{
         Ballpit(unsigned numBalls);
         ~Ballpit();
 
+        bool checkCollision(const Ball& ballOne, const Ball& ballTwo);
 
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
