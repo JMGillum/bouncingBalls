@@ -24,6 +24,29 @@ Ballpit::~Ballpit(){
 }
 
 
+bool checkCollision(const Ball& ballOne, const Ball& ballTwo){
+    double distance = 0;
+    double maxDistance = 0;
+
+    maxDistance = ballOne.radius() + ballTwo.radius();
+
+    double x = 0, y = 0;
+
+    x = ballOne.x() - ballTwo.x();
+    if(x < 0) { x *= -1; }
+
+    y = ballOne.y() - ballTwo.y();
+    if(y < 0) { y *= -1; }
+
+    distance = (x * x) + (y * y);
+
+    distance = std::sqrt(distance);
+
+    if(distance > maxDistance) { return false; }
+    return true;
+}
+
+
 void Ballpit::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     for(unsigned i = 0; i < mNumBalls; ++i){
         if(mBalls[i] != nullptr){
