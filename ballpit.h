@@ -2,6 +2,7 @@
 #define BALLPIT_H
 
 #include <vector>
+#include <cmath>
 
 #include "ball.h"
 
