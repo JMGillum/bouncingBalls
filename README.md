@@ -11,5 +11,6 @@ dynamically altering the number of balls. Plans also include obstacles and other
 courses for the balls to traverse.
 
 
+Install sfml-dev as well as g++: `sudo apt install sfml-dev g++ -y`
 
 Compile with `g++ *.cpp -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system`
