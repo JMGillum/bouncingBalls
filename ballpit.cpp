@@ -1,7 +1,7 @@
 /**
  * @file ballpit.cpp
  * @author Josh Gillum
- * @brief Ballpit class function definitions
+ * @brief Ballpit class function implementations
  * @version 0.1
  * @date 2023-11-22
  * 
@@ -35,7 +35,7 @@ Ballpit::~Ballpit(){
 }
 
 
-bool checkCollision(const Ball& ballOne, const Ball& ballTwo){
+bool Ballpit::checkCollision(const Ball& ballOne, const Ball& ballTwo){
     double distance = 0;
     double maxDistance = 0;
 
