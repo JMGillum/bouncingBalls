@@ -35,6 +35,14 @@ Ballpit::~Ballpit(){
 }
 
 
+/**
+ * @brief Checks the collision betwen two balls
+ * 
+ * @param ballOne, one of the two balls
+ * @param ballTwo, the other of the two balls
+ * @return true, they are colliding
+ * @return false, they are not colliding
+ */
 bool Ballpit::checkCollision(const Ball& ballOne, const Ball& ballTwo){
     double distance = 0;
     double maxDistance = 0;
