@@ -1,3 +1,14 @@
+/**
+ * @file ball.h
+ * @author Josh Gillum
+ * @brief Ball class definition. Constists of a circle object with a position and velocity
+ * @version 0.1
+ * @date 2023-11-22
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #ifndef BALL_H
 #define BALL_H
 
@@ -29,11 +40,11 @@ class Ball : public sf::Drawable {
 
     protected:
 
-        sf::CircleShape mShape;
-        sf::Color mColor;
-        double mRadius;
-        sf::Vector2f mVelocity;
-        sf::Vector2f mPosition;
+        sf::CircleShape mShape; // The shape object
+        sf::Color mColor; // Color of the ball
+        double mRadius; // Radius of the ball
+        sf::Vector2f mVelocity; // Velocity vector for the ball
+        sf::Vector2f mPosition; // Position vector for the ball
 
 
     private:

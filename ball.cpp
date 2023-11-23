@@ -1,3 +1,14 @@
+/**
+ * @file ball.cpp
+ * @author Josh Gillum
+ * @brief Ball class function implementations
+ * @version 0.1
+ * @date 2023-11-22
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #include "ball.h"
 
 
