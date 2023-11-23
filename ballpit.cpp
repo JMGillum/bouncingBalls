@@ -1,3 +1,14 @@
+/**
+ * @file ballpit.cpp
+ * @author Josh Gillum
+ * @brief Ballpit class function definitions
+ * @version 0.1
+ * @date 2023-11-22
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #include "ballpit.h"
 
 

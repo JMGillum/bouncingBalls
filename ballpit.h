@@ -1,3 +1,14 @@
+/**
+ * @file ballpit.h
+ * @author Josh Gillum
+ * @brief Ballpit class definition. Offers a way to manage multiple ball objects
+ * @version 0.1
+ * @date 2023-11-22
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #ifndef BALLPIT_H
 #define BALLPIT_H
 
@@ -14,14 +25,14 @@ class Ballpit : public sf::Drawable{
         Ballpit(unsigned numBalls);
         ~Ballpit();
 
-        bool checkCollision(const Ball& ballOne, const Ball& ballTwo);
+        bool checkCollision(const Ball& ballOne, const Ball& ballTwo); // Checkes collision between every ball
 
-        virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+        virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const; // Draws the balls
 
     protected:
 
-        std::vector<Ball*> mBalls;
-        unsigned mNumBalls;
+        std::vector<Ball*> mBalls; // Stores the balls
+        unsigned mNumBalls; // The number of balls in the ballpit
 
 
     private:
