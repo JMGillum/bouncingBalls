@@ -33,9 +33,13 @@ class Ball : public sf::Drawable {
         
         double radius() const { return mRadius; }
 
+        double mass() const { return 3.14159 * mRadius * mRadius; }
+
         sf::Color color() const { return mColor; }
 
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+
+        void move();
 
 
     protected:

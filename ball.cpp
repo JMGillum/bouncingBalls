@@ -23,7 +23,7 @@ Ball::Ball(sf::Vector2f position, double radius, sf::Color color){
     mPosition = position;
     mColor = color;
 
-    mVelocity = sf::Vector2f(0,0);
+    mVelocity = sf::Vector2f(3,1);
 
     mShape.setRadius(mRadius);
     mShape.setFillColor(color);
@@ -47,5 +47,10 @@ void Ball::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     target.draw(mShape);
 }
 
+
+void Ball::move() {
+    mPosition += mVelocity;
+    mShape.setPosition(mPosition);
+}
 
 
