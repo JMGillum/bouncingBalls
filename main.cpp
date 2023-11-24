@@ -33,6 +33,7 @@ int main(){
         while (timeSinceLastUpdate > TIME_PER_FRAME){ // Prevents drawing to the screen faster than the specified frame rate
             timeSinceLastUpdate -= TIME_PER_FRAME;
             window.clear();
+            balls.move();
             window.draw(balls);
             window.display();
         }   
