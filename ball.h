@@ -17,8 +17,9 @@
 class Ball : public sf::Drawable {
 
     public:
-        Ball() : Ball(sf::Vector2f(0,0), 5, sf::Color::Black) {}
-        Ball(sf::Vector2f position, double radius, sf::Color color);
+        //Ball() : Ball(sf::Vector2f(0,0), 5, sf::Color::Black) {}
+        //Ball(sf::Vector2f position, double radius, sf::Color color);
+        Ball(sf::Vector2f position = sf::Vector2f(0,0), sf::Vector2f velocity = sf::Vector2f(0,0), double radius = 5, sf::Color color = sf::Color::Green);
         Ball(const Ball &right);
 
         // Returns information about the object's location
@@ -37,9 +38,14 @@ class Ball : public sf::Drawable {
 
         sf::Color color() const { return mColor; }
 
+        // Updates
+
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
         void move();
+
+        void setVelocity(sf::Vector2f velocity) { mVelocity = velocity; }
+        void setPosition(sf::Vector2f position) { mPosition = position; }
 
 
     protected:
