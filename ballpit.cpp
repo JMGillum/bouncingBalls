@@ -73,3 +73,11 @@ void Ballpit::draw(sf::RenderTarget& target, sf::RenderStates states) const {
         }
     }
 }
+
+void Ballpit::move() {
+    for(unsigned i = 0; i < mNumBalls; ++i){
+        if(mBalls[i] != nullptr){
+            mBalls[i]->move();
+        }
+    }
+}

@@ -29,6 +29,8 @@ class Ballpit : public sf::Drawable{
 
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const; // Draws the balls
 
+        void move();
+
     protected:
 
         std::vector<Ball*> mBalls; // Stores the balls
